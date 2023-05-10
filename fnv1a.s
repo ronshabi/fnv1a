@@ -1,9 +1,9 @@
-global fnv1a
+global fnv1a32
 
 fnv32_offset    equ 0x811c9dc5
 fnv32_prime     equ 0x01000193
 
-fnv1a:
+fnv1a32:
     ; Hash = rax
     ; Data = rdi
     xor rax, rax
