@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -Wall -g
+CFLAGS := -Wall -g -z noexecstack
 AS := nasm
 ASFLAGS := -felf64
 
@@ -16,4 +16,3 @@ fnv1a: example.c fnv1a.o
 clean:
 	rm *.o
 	rm fnv1a
-	rm example
